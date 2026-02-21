@@ -32,6 +32,25 @@ const newNumber = [...number, 10, 100];
 console.log(newNumber);
 
 
+// Array Methods ***
+
+// 1. const result = products.map(pro => pro.price);
+//  console.log(result);  //Give an array
+
+// 2. products.forEach(product => {
+//     // Didn't give any return
+// });
+
+// 3. const result = products.filter(product => product.brand === 'apple');
+// console.log(result);  //Give an array as a result
+
+// 4. const result = products.find(product => product.name === 'apple1');
+// console.log(result);  //Always return a single value
+
+
+ 
+
+
 
 
 

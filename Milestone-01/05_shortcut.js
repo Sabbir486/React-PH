@@ -27,3 +27,17 @@ const hideUser = () => console.log("Hide User Red");
 isActive ? showUser() : hideUser();
 
 isActive && showUser();
+
+
+// Js -> Type Conversion/ Quarsion
+
+const num = "10";
+console.log(typeof(num));
+
+const result = num-2;
+console.log(typeof(result));
+
+// Convert to a value
+console.log(parseInt(num));
+
+

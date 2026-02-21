@@ -45,7 +45,7 @@ console.log(newNumber);
 // console.log(result);  //Give an array as a result
 
 // 4. const result = products.find(product => product.name === 'apple1');
-// console.log(result);  //Always return a single value
+// console.log(result);  //Always return a single object
 
 
  

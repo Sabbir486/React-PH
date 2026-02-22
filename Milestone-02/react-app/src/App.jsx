@@ -13,8 +13,13 @@ function App() {
 
       <Student name='Sabbir' dept='Science'></Student>
       <Student name='Rony' dept='Commerce'></Student>
-      {/* <Person></Person> */}
+      <Player name='Tamim' run='5000'></Player>
       <Developer name='Naimur' tech='C++'></Developer>
+
+      <Player name='Mushi' run='6000'></Player>
+
+      <Salami eid='Eid-Ul-Fitr' taka='10000'></Salami>
+      <Salami eid='Eid-Ul-Azha'></Salami>
     </>
   )
 }
@@ -34,11 +39,18 @@ function Person() {
   )
 }
 
-function Player(){
+// Using Destructuring
+
+function Player({name, run}){
   return(
-    <h1>Player Details</h1>
+    <div className='student'>
+      <h3>Name: {name}</h3>
+      <p>Runs: {run}</p>
+    </div>
   )
 }
+
+
 
 function Sports(){
   return(
@@ -69,6 +81,18 @@ function Developer(dev){
     <div className='developer'>
       <p>Name: {dev.name}</p>
       <p>Technology: {dev.tech} </p>
+    </div>
+  )
+}
+
+
+// Using Destructuring
+
+function Salami({eid, taka=0}){
+  return(
+    <div className='developer'>
+      <p>Eid Name: {eid}</p>
+      <p>Amount: {taka}</p>
     </div>
   )
 }

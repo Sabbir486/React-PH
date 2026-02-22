@@ -1,11 +1,13 @@
 
 import './App.css'
 import Todo from './Todo';
+import Food from './food';
 
 // Components
 
 function App() {
   const time = 50;
+  const quan = 10;
 
   return (
     <>
@@ -13,6 +15,9 @@ function App() {
       <Todo task='Learn React' isDone={true} time={time}></Todo>
       <Todo task='Revise React' isDone={false}></Todo>
       <Todo task='Take a shower' isDone={false}></Todo>
+
+      <Food name='banana' price='15' quantity={quan}></Food>
+      <Food name='mango' price='35' quantity={quan}></Food>
       
 
       {/* <Person></Person>    

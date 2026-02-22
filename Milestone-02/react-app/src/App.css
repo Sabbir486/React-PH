@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+.student {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid salmon;
+}
+
+.developer{
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  color: antiquewhite;
+  border: 5px solid greenyellow ;
+}

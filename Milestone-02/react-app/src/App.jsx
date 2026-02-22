@@ -5,10 +5,15 @@ import Todo from './Todo';
 // Components
 
 function App() {
+  const time = 50;
+
   return (
     <>
       <h1>React Core Concepts</h1> 
-      <Todo></Todo>
+      <Todo task='Learn React' isDone={true} time={time}></Todo>
+      <Todo task='Revise React' isDone={false}></Todo>
+      <Todo task='Take a shower' isDone={false}></Todo>
+      
 
       {/* <Person></Person>    
       <Player></Player> 

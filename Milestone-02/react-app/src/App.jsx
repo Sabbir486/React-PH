@@ -6,10 +6,15 @@ import './App.css'
 function App() {
   return (
     <>
-      <h1>Vite + React</h1> 
-      <Person></Person>    
+      <h1>React Core Concepts</h1> 
+      {/* <Person></Person>    
       <Player></Player> 
-      <Sports></Sports>
+      <Sports></Sports> */}
+
+      <Student name='Sabbir' dept='Science'></Student>
+      <Student name='Rony' dept='Commerce'></Student>
+      {/* <Person></Person> */}
+      <Developer name='Naimur' tech='C++'></Developer>
     </>
   )
 }
@@ -17,9 +22,15 @@ function App() {
 function Person() {
   const age = 18;
 
+  const personStyle = {
+    color: 'red' ,
+    textAlign: 'right',
+
+  }
+
   return (
 
-    <p>I am a Student {age}</p>
+    <p style={personStyle}>I am a Student {age}</p>
   )
 }
 
@@ -38,6 +49,26 @@ function Sports(){
         <li>Bowling</li>
       </ul>
       <h4>Loosing</h4>
+    </div>
+  )
+}
+
+function Student(props){
+  // console.log(props);
+  
+  return(
+    <div className='student'> 
+      <p>Name: {props.name}</p>
+      <p>Department: {props.dept}</p>
+    </div>
+  )
+}
+
+function Developer(dev){
+  return(
+    <div className='developer'>
+      <p>Name: {dev.name}</p>
+      <p>Technology: {dev.tech} </p>
     </div>
   )
 }

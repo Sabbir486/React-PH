@@ -3,6 +3,7 @@ import './App.css'
 import Counter from './Counter';
 import Player from './Player';
 import Bowler from './Bowler';
+import Users from './Users';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
       <h3>Vite + React</h3>
 
       <Counter></Counter>
+
+      <Users></Users>
 
       <Player></Player>
 

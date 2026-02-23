@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.bordered-card{
+  border: 2px solid greenyellow;
+  padding: 10px;
+}

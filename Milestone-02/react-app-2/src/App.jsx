@@ -2,6 +2,7 @@
 import './App.css'
 import Counter from './Counter';
 import Player from './Player';
+import Bowler from './Bowler';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
       <Counter></Counter>
 
       <Player></Player>
+
+      <Bowler></Bowler>
 
       {/* <button onClick='handleClick()'>Click Me</button> */}
 

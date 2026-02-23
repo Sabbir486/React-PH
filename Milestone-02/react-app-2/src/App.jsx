@@ -5,13 +5,24 @@ import Player from './Player';
 import Bowler from './Bowler';
 import Users from './Users';
 import { Suspense } from 'react';
+import Friends from './Friends';
 
 const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
 
 
+// Async Await
+
+const fetchFriends = async() => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  return response.json();
+}
+
+
 
 function App() {
+
+  const friendsPromise = fetchFriends();
 
   function handleClick(){
     alert('I am Clicked');
@@ -32,9 +43,17 @@ function App() {
 
       <Counter></Counter>
 
+      {/* API Calling */}
+
       <Suspense fallback={<h3>Loading ...</h3>}>
         <Users fetchUsers={fetchUsers}></Users>
       </Suspense>
+
+
+      <Suspense fallback={<h3>Friends are Coming ...</h3>}>
+        <Friends friendsPromise={friendsPromise}></Friends>
+      </Suspense>
+
 
       <Player></Player>
 

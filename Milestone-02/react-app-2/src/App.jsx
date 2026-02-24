@@ -6,9 +6,14 @@ import Bowler from './Bowler';
 import Users from './Users';
 import { Suspense } from 'react';
 import Friends from './Friends';
+import Posts from './Posts';
 
 const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
-.then(res => res.json())
+.then(res => res.json());
+
+
+const fetchPosts = fetch('https://jsonplaceholder.typicode.com/posts')
+.then(res => res.json());
 
 
 // Async Await
@@ -50,9 +55,14 @@ function App() {
       </Suspense>
 
 
-      <Suspense fallback={<h3>Friends are Coming ...</h3>}>
-        <Friends friendsPromise={friendsPromise}></Friends>
+      <Suspense fallback={<h3>Posts are Loading ...</h3>}>
+        <Posts fetchPosts={fetchPosts}></Posts>
       </Suspense>
+
+
+      {/* <Suspense fallback={<h3>Friends are Coming ...</h3>}>
+        <Friends friendsPromise={friendsPromise}></Friends>
+      </Suspense> */}
 
 
       <Player></Player>

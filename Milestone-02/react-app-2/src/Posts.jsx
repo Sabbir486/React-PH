@@ -4,7 +4,7 @@ import Post from './Post'
 export default function Posts({fetchPosts}){
 
     const posts = use(fetchPosts);
-    console.log(fetchPosts);
+    // console.log(fetchPosts);
     
 
     return(

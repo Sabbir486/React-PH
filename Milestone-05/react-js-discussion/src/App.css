@@ -39,3 +39,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.bo-card{
+  border: 2px solid antiquewhite;
+  padding: 10px;
+  margin: 5px;
+  background-color: blue;
+  text-align: center;
+}

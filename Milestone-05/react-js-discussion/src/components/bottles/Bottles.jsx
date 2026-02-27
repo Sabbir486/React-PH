@@ -8,7 +8,7 @@ const Bottles = ({bottlesPromise}) => {
 
     return (
         <div>
-            <h2>Bottles</h2>
+            <h2>Bottles Done</h2>
         </div>
     );
 };

@@ -1,49 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { Suspense } from 'react'
 import './App.css'
-import { add, diff, mult, divide as div } from './utils/math/math'
+import Bottles from './components/bottles/bottles'
+// import { add, diff, mult, divide as div } from './utils/math/math'
+
+const bottlesPromise = fetch('./bottles.json').then(res => res.json());
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  const sum = add(5,20);
-  // console.log(sum);
 
-  const sub = diff(20,5);
+  // const sum = add(5,20);
+  // // console.log(sum);
 
-  const multi = mult(5,5);
+  // const sub = diff(20,5);
 
-  const divide = 9/3;
+  // const multi = mult(5,5);
 
-  const division = div(25,5);
+  // const divide = 9/3;
 
-  console.log(sum, sub, multi, divide, division);
+  // const division = div(25,5);
+
+  // console.log(sum, sub, multi, divide, division);
+
+  // const bottles = [
+  //   {id: 1, name: 'Sa', price: 100, color: 'pink'},
+  //   {id: 2, name: 'Ra', price: 200, color: 'Rink'},
+  //   {id: 3, name: 'Ta', price: 300, color: 'Mink'},
+  //   {id: 4, name: 'Ba', price: 400, color: 'Bink'},
+  //   {id: 5, name: 'Ca', price: 500, color: 'Cink'},
+  // ]
   
   
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <>      
+      <h1>React Discussion</h1>
+
+      <Suspense fallback={<h3>Bottles are loading...</h3>}>
+        <Bottles bottlesPromise={bottlesPromise}></Bottles>
+      </Suspense>
+      
+      
     </>
   )
 }

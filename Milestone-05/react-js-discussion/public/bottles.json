@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "AquaPure Stainless Steel Bottle",
+    "brand": "AquaPure",
+    "capacity_ml": 750,
+    "color": "Silver",
+    "price": 12.99,
+    "in_stock": true
+  },
+  {
+    "id": 2,
+    "name": "HydroMax Insulated Bottle",
+    "brand": "HydroMax",
+    "capacity_ml": 1000,
+    "color": "Black",
+    "price": 18.50,
+    "in_stock": true
+  },
+  {
+    "id": 3,
+    "name": "EcoSip BPA-Free Bottle",
+    "brand": "EcoSip",
+    "capacity_ml": 600,
+    "color": "Blue",
+    "price": 9.75,
+    "in_stock": false
+  },
+  {
+    "id": 4,
+    "name": "ChillMate Sports Bottle",
+    "brand": "ChillMate",
+    "capacity_ml": 850,
+    "color": "Red",
+    "price": 14.20,
+    "in_stock": true
+  },
+  {
+    "id": 5,
+    "name": "PureFlow Glass Bottle",
+    "brand": "PureFlow",
+    "capacity_ml": 500,
+    "color": "Transparent",
+    "price": 11.00,
+    "in_stock": true
+  }
+]

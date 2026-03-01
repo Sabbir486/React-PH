@@ -10,7 +10,7 @@ const Bottle = ({bottle, handleAddtoCart}) => {
             <p>Price in Dollar: ${price}</p>
             <p>Quantity in ML: {capacity_ml}</p>
 
-            <button onClick={() => handleAddtoCart(bottle)}>Buy Now</button>
+            <button onClick={() => handleAddtoCart(bottle)}>Buy Bottle</button>
         </div>
     );
 };

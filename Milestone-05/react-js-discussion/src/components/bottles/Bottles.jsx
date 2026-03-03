@@ -19,7 +19,7 @@ const Bottles = ({bottlesPromise}) => {
     return (
         <div>
             <h2>Bottles Number: {bottles.length}</h2>
-            <p>No of Cart Added: {cart.length}</p>
+            <p>Added Cart: {cart.length}</p>
             {
                 bottles.map(bottle => <Bottle key={bottle.id}
                      bottle={bottle}

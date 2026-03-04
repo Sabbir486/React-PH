@@ -6,7 +6,7 @@ const Bottle = ({bottle, handleAddtoCart}) => {
 
     return (
         <div className='bo-card'>
-            <p>Bottle Company Name: {name}</p>
+            <p>Company Name: {name}</p>
             <p>Price: ${price}</p>
             <p>Capacity in ML: {capacity_ml}</p>
 

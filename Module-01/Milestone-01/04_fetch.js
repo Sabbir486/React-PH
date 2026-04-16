@@ -8,7 +8,7 @@ const obj = {
     }
 }
 
-// Convert into json Data
+// Convert Object into json Data
 const jsonData = JSON.stringify(obj);
 console.log(jsonData);
 

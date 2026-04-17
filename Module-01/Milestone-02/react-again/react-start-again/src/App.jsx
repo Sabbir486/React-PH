@@ -1,11 +1,16 @@
 
 import './App.css'
+import Todo from './Todo';
 
 function App() {
 
   return (
     <>
       <h1>React Core Concepts</h1>
+      <Todo task="Learn React" isDone={false}></Todo>
+      <Todo task="Revise React" isDone={true}></Todo>
+
+
       {/* <Person></Person>
       <Student></Student>
       <Developer name="Alice" language="JavaScript"></Developer>

@@ -3,10 +3,13 @@ import { Suspense } from 'react';
 import './App.css'
 import Counter from './Counter';
 import Users from './Users';
+import Friends from './Friends';
 
 
 const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
-.then(data => console.log(data))
+
+
+const fetchFriends = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
 
 
 function App() {
@@ -31,6 +34,10 @@ function App() {
 
       <Suspense fallback={<h3>Loading...</h3>}>
         <Users fetchUsers = {fetchUsers}></Users>
+      </Suspense>
+
+      <Suspense fallback={<h3>Friends are Coming...</h3>}>
+        <Friends fetchFriends = {fetchFriends}></Friends>
       </Suspense>
 
 

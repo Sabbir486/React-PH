@@ -1,7 +1,13 @@
 
+import { Suspense } from 'react';
 import './App.css'
 import Counter from './Counter';
 import Users from './Users';
+
+
+const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
+.then(data => console.log(data))
+
 
 function App() {
   
@@ -22,7 +28,10 @@ function App() {
     <>
       <h1>React Core Concepts</h1>
       <Counter></Counter>
-      <Users></Users>
+
+      <Suspense fallback={<h3>Loading...</h3>}>
+        <Users fetchUsers = {fetchUsers}></Users>
+      </Suspense>
 
 
 

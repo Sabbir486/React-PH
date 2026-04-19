@@ -181,4 +181,13 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+
+}
+
+.todo{
+  border: 1px solid red;
+  margin-top: 15px;
+  padding: 16px;
+  border-radius: 8px;
 }

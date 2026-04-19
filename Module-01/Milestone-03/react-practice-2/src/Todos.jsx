@@ -1,5 +1,7 @@
 import './App.css'
 import { use } from 'react';
+import Todo from './Todo';
+
 
 export default function Todos({fetchTodos}){
 
@@ -10,6 +12,10 @@ export default function Todos({fetchTodos}){
     return(
         <div>
             <h3>Title: {todos.length}</h3>
+
+            {
+                todos.map(todo => <Todo key={todo.id} todo = {todo}></Todo>)
+            }
         </div>
     )
 }

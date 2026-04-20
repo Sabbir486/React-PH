@@ -29,7 +29,7 @@ const Blog = ({blog}) => {
                     }
                 </div>
                 <div className="card-actions justify-end">
-                    <FaBookmark />
+                    <FaBookmark size={30} />
                 <button className="btn btn-primary">mark as read</button>
                 </div>
             </div>

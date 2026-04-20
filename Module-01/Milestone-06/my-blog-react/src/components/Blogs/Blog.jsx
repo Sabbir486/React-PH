@@ -1,7 +1,9 @@
 import React from 'react';
 import { FaBookmark } from "react-icons/fa";
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleBookmark}) => {
+    // console.log(handleBookmark);
+    
 
     const {cover, title, author, img} = blog;
 
@@ -29,7 +31,9 @@ const Blog = ({blog}) => {
                     }
                 </div>
                 <div className="card-actions justify-end">
-                    <FaBookmark size={30} />
+                
+                <button onClick={() => handleBookmark(blog)}><FaBookmark  size={30} /></button>    
+
                 <button className="btn btn-primary">mark as read</button>
                 </div>
             </div>

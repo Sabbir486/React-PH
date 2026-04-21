@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBookmark } from "react-icons/fa";
 
-const Blog = ({blog, handleBookmark}) => {
+const Blog = ({blog, handleBookmark, handleMarkAsRead}) => {
     // console.log(handleBookmark);
     
 
@@ -34,7 +34,7 @@ const Blog = ({blog, handleBookmark}) => {
                 
                 <button onClick={() => handleBookmark(blog)}><FaBookmark  size={30} /></button>    
 
-                <button className="btn btn-primary">mark as read</button>
+                <button onClick={() => handleMarkAsRead(blog.reading_time)} className="btn btn-primary">mark as read</button>
                 </div>
             </div>
             </div>

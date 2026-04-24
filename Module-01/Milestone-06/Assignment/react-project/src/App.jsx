@@ -1,12 +1,13 @@
 
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   
 
   return (
     <>
-    <h1>React Project</h1>
+    <Navbar></Navbar>
     </>
   )
 }

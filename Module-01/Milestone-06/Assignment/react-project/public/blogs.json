@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Vintage Leica M3 Camera",
+    "current_bid": 2850,
+    "currency": "USD",
+    "time_left": "2 days",
+    "image": "https://images.unsplash.com/photo-1519183071298-a2962be96d4b"
+  },
+  {
+    "id": 2,
+    "name": "1965 Gibson SG Standard Electric Guitar",
+    "current_bid": 2850,
+    "currency": "USD",
+    "time_left": "2 days",
+    "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d"
+  },
+  {
+    "id": 3,
+    "name": "Original Apple Macintosh 128K (1984)",
+    "current_bid": 2850,
+    "currency": "USD",
+    "time_left": "2 days",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+  },
+  {
+    "id": 4,
+    "name": "Rolex Submariner 16610",
+    "current_bid": 2850,
+    "currency": "USD",
+    "time_left": "2 days",
+    "image": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3"
+  },
+  {
+    "id": 5,
+    "name": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+    "current_bid": 2850,
+    "currency": "USD",
+    "time_left": "2 days",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+  },
+  {
+    "id": 6,
+    "name": "Mid-Century Modern Eames Lounge Chair",
+    "current_bid": 2850,
+    "currency": "USD",
+    "time_left": "2 days",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+  }
+]

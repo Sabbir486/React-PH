@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": "৳1000/month",
+    "duration": "1 Month",
+    "features": [
+      "Access to gym equipment",
+      "Locker facility",
+      "1 free fitness assessment",
+      "Open gym (no trainer)"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": "৳2500/month",
+    "duration": "1 Month",
+    "features": [
+      "All Basic features",
+      "Personal trainer (3 days/week)",
+      "Diet chart guidance",
+      "Cardio & strength training support"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": "৳5000/month",
+    "duration": "1 Month",
+    "features": [
+      "All Standard features",
+      "Daily personal trainer",
+      "Custom workout plan",
+      "Diet & nutrition plan",
+      "Body composition tracking"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Quarterly Plan",
+    "price": "৳6500/3 months",
+    "duration": "3 Months",
+    "features": [
+      "Access to all equipment",
+      "Trainer support (weekly)",
+      "Progress tracking",
+      "Discounted price"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Annual Plan",
+    "price": "৳20000/year",
+    "duration": "12 Months",
+    "features": [
+      "Unlimited gym access",
+      "Priority trainer support",
+      "Free diet consultation",
+      "Fitness events access",
+      "Best value package"
+    ]
+  }
+]

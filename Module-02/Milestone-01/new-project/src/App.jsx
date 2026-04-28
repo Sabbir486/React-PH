@@ -1,6 +1,7 @@
 
 import './App.css'
 import DaisyNav from './components/DaisyNav/DaisyNav'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     <>     
       <header>
         <DaisyNav></DaisyNav>
+        <Navbar></Navbar>
       </header>
 
       <main>

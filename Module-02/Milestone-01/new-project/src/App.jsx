@@ -1,12 +1,19 @@
 
 import './App.css'
+import DaisyNav from './components/DaisyNav/DaisyNav'
 
 function App() {
   
 
   return (
     <>     
-      <h1>React Application</h1>
+      <header>
+        <DaisyNav></DaisyNav>
+      </header>
+
+      <main>
+
+      </main>
     </>
   )
 }

@@ -6,7 +6,7 @@ const Cart = ({price}) => {
     const {features} = price;
     
     return (
-        <div className='border bg-amber-500 rounded-2xl p-4 mt-5'>
+        <div className='flex flex-col border bg-amber-500 rounded-2xl p-4 mt-5'>
             {/* Cart Header */}
             <div>
                 <h1 className='text-5xl'>{price.name}</h1>
@@ -15,7 +15,7 @@ const Cart = ({price}) => {
             </div>
 
             {/* Cart Body */}
-            <div className='text-black'>
+            <div className='text-black flex-1'>
                 <p>{price.duration}</p>
                 <h3 className='font-bold'>All Features</h3>
                 {
@@ -24,6 +24,7 @@ const Cart = ({price}) => {
                     feature={feature}></Feature>)
                 }
             </div>
+            <button className="mt-4 btn w-full">Subscribe</button>
             
         </div>
     );

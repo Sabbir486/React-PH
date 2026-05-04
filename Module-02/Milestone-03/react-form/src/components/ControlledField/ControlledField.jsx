@@ -37,6 +37,7 @@ const ControlledField = () => {
         <div>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder='Name' name='Name' onChange={handleNameChange} defaultValue={name} required />
+                <br />
 
 
                 <input type="email" placeholder='Email' name='Email' onChange={handleEmailChange} defaultValue={email} required />

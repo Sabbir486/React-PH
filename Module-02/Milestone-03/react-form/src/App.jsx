@@ -5,6 +5,7 @@ import FormAction from './components/FormAction/FormAction'
 import HookForm from './components/HookForm/HookForm'
 import SimpleForm from './components/SimpleForm/SimpleForm'
 import UnControlledField from './components/UnControlledField/UnControlledField'
+import FamilyTree from './components/FamilyTree/FamilyTree';
 
 function App() {
   
@@ -16,7 +17,8 @@ function App() {
       {/* <FormAction></FormAction> */}
       {/* <ControlledField></ControlledField> */}
       {/* <UnControlledField></UnControlledField> */}
-      <HookForm></HookForm>
+      {/* <HookForm></HookForm> */}
+      <FamilyTree></FamilyTree>
     </>
   )
 }

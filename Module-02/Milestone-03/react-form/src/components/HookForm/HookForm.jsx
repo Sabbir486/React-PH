@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import useInputField from '../../hooks/useInputField';
 
 const HookForm = () => {
@@ -6,7 +6,7 @@ const HookForm = () => {
     const [name, handleNameChange] = useInputField('');
     const [email, handleEmailChange] = useInputField('');
     const [password, handlePasswordChange] = useInputField('');
-    
+
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('Submit', name, email, password);

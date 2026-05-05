@@ -7,7 +7,7 @@ const Grandpa = () => {
     return (
         <div>
             <h3>Grandpa</h3>
-            <section>
+            <section className='flex'>
                 <Dad></Dad>
                 <Uncle></Uncle>
                 <Aunt></Aunt>

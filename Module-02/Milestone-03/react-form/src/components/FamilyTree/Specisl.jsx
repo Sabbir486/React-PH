@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { AssetContext } from './FamilyTree';
 
 const Specisl = ({ name, asset }) => {
@@ -13,7 +13,7 @@ const Specisl = ({ name, asset }) => {
             <p>{name}</p>
             <p>Asset: {asset}</p>
             <p>New Asset: {Asset2}</p>
-            
+
         </div>
     );
 };

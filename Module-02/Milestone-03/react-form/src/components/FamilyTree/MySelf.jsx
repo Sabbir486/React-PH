@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Specisl from './Specisl';
 
 const MySelf = ({ asset }) => {
